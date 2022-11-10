@@ -8,4 +8,10 @@
 ## VDI
 uvicorn main:app --reload  (If __main__ not present)
 <br>
-run main.py
+run main.py from vscode
+## CLI Docker
+docker-compose up -d --build
+
+# Access App
+## Local Docker
+http://localhost:8002/ping
