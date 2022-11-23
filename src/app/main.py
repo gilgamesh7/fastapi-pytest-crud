@@ -6,6 +6,8 @@ from app.db import engine, database, metadata
 
 app = FastAPI()
 
+metadata.create_all(engine)
+
 @app.on_event("startup")
 async def startup():
     await database.connect()
@@ -13,7 +15,7 @@ async def startup():
 @app.on_event("shutdown")
 async def shutdown():
     await database.disconnect()
-    
+
 app.include_router(ping.router)
 
 if __name__ == "__main__":
