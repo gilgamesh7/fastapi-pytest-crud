@@ -11,4 +11,7 @@ async def get(id: int):
 
     return await database.fetch_one(query=query)
 
-    
+async def get_all():
+    query = notes.select()
+
+    return await database.fetch_all(query=query)    
