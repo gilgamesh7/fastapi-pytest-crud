@@ -3,6 +3,7 @@
 # Links
 - [Developing and Testing an Asynchronous API with FastAPI and Pytest](https://testdriven.io/blog/fastapi-crud/#additional-validation)
 
+- [Rate limiting](https://twitter.com/testdrivenio/status/1599456005561389056/photo/1)
 
 # Run the app
 ## VDI
